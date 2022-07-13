@@ -41,6 +41,9 @@ for (let destination of destinations) {
     })
 }
 
+// STOP PROPAGATION OF "DBLCLICK"" EVENT
+
+// document.body.addEventListener("dblclick", (e) => e.stopImmediatePropagation());
 document.body.addEventListener("dblclick", evt => {
     evt.target.innerHTML = "MAGIC BUS"
 })
